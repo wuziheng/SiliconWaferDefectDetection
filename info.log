@@ -1,0 +1,18 @@
+Wed, 06 Sep 2017 14:34:33 test.py         [line:24  ] INFO     image_process        Semilab261151217B-1457
+Wed, 06 Sep 2017 14:34:33 test.py         [line:25  ] INFO     image_process        DETECTION STARTS:
+
+Wed, 06 Sep 2017 14:34:33 cv_wzh.py       [line:57  ] INFO     find_target_contour  Spends 12.260   ms
+Wed, 06 Sep 2017 14:34:34 cv_wzh.py       [line:141 ] INFO     border_locate        Spends 397.772  ms
+Wed, 06 Sep 2017 14:34:34 cv_wzh.py       [line:289 ] INFO     slice_by_border      Spends 77.372   ms
+
+Wed, 06 Sep 2017 14:34:34 test.py         [line:39  ] INFO     image_process        border search start
+Wed, 06 Sep 2017 14:34:34 test.py         [line:45  ] WARNING  image_process        (2977, 3698) : defect Num / threshold :  58 /  30
+Wed, 06 Sep 2017 14:34:34 test.py         [line:47  ] INFO     image_process        border search end
+
+Wed, 06 Sep 2017 14:34:34 test.py         [line:49  ] INFO     image_process        inner  search start
+Wed, 06 Sep 2017 14:34:35 test.py         [line:55  ] WARNING  image_process        (2777, 3586) : defect Num / threshold : 207 /  30
+Wed, 06 Sep 2017 14:34:35 test.py         [line:60  ] INFO     image_process        inner  search end
+
+Wed, 06 Sep 2017 14:34:35 test.py         [line:62  ] INFO     image_process        corner search start
+Wed, 06 Sep 2017 14:34:35 test.py         [line:70  ] INFO     image_process        corner search end
+
