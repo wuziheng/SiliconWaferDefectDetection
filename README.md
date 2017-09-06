@@ -1,23 +1,20 @@
-# CUDA version ISP
+# SiliconWafer DefectDetection
 
-CUDA implemenation of paralleled Image signal process on Nvidia TegraX1.(Only include the image process part) , 59 fps for 4k(3840x1920) image input.
+Python implemetation of siliconwafer defectdetecion algorithm prototype, wrapper of some designed cv2 method. Now includes pixel level border locate and crack detection. Further more detection will be added such as droplets/dirty
 
-Olympus license. Contributions welcome
+Contributions Welcome
 
 ### Functions 
 #
-* ***Automatic exporsure***:  automatic modify gain coefficient of the input channel or modify the capture devices' exposure time 
+* ***Border locate***:  according to characteristic of siliconwafer samples and cv2.findContours method, perform a fast pixel border locate of sample. result can be used by other operation. 
 
-* ***Automatic white balance***: automatic modify there channels gain to fit the image in to a white balance situation
+* ***Slice***:  along the border(below), slice the sample(4kx4k) into suitable size for further detection, it can also be regard as calibration. the slices are classified in to three type according to their different characteristic: border,inner,corner 
 
-* ***Gamma correct***: to correct the capture devices sensor's gamma effect
+* ***Crack detection***: using adaptive threshold and  closed operation and grow method to detect the crack defection. 
 
-* ***Edge enhancement***: edge enhancement to sharp the curve detail,  strengthen the detail of image
-
-* ***Format transform***: transform the input RAW(bayes_rggb) format into RGB format for screen show, transform RGB format into YUYV format for video encode
 
 ### Notes
 #
-* This code is only image process part for the whole project which aims to develop  a software integrated capture/image process/realtime display/video encode and transform/ on Nvidia TegraX1
-
-* The repository also includes the serial version ISP which help to understand the code details. and some input test data.
+* This is a prototype of siliconwafer defectdetcion algorithm, now only includes location and crack detecion, futher will add droplet/dirty/
+In order to debug, lots of logging and datetime are used.(using at first time)
+Welcome suggesion and contribution!
